@@ -31,12 +31,15 @@ function createNewTaskElement(taskString) {
 }
 
 function addTask() {
-  console.log("Add task...");
+  // console.log("Add task...");
   var listItem = createNewTaskElement(taskInput.value);
-  incompleteTasksHolder.appendChild(listItem);
-  bindTaskEvents(listItem, taskCompleted);
-
-  taskInput.value = "";
+  if (taskInput.value == "") {
+    // console.log("Please Add-to-Do!!");
+  } else {
+    incompleteTasksHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskCompleted);
+    taskInput.value = "";
+  }
 }
 
 function editTask() {
