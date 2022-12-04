@@ -7,19 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📋|To Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <script src="To_Do.js" defer></script>
 </head>
 
 <body>
 
     <body>
         <div class="container">
-            <h2 id="heading">🔗&nbsp;&nbsp;&nbsp;TO-DO LIST📋 &nbsp;&nbsp;&nbsp;🔗</h2>
+            <h2 id="heading">🔗&nbsp;Daily-To-DO📋 &nbsp;&nbsp;🔗</h2>
             <h3>Add Task..🖋️</h3>
             <div class="add-container">
-                <input id="new-task" type="text" placeholder="Enter Task Here..📝"><button class="Add-btn"> Add
-                </button>
+                <input id="new-task" type="text" placeholder="Enter Task Here..📝" required>
+                <button class="Add-btn"> Add</button> <br>
+                <!-- <p id="required-text">.snbjk.</p> -->
             </div>
             <h3>To - do (Mark ✅ if Task Done!!)</h3>
+
             <ul id="incomplete-tasks">
                 <li><input type="checkbox"><label>Class Meeting</label>
                     <input type="text">
@@ -35,14 +39,14 @@
 
             <h3>Completed Task ✅</h3>
             <ul id="completed-tasks">
-                <li><input type="checkbox" checked><label>Assignment
-                        Submited</label><input type="text"><button class="edit">Edit</button><button
-                        class="delete">Delete</button>
-
+                <li><input type="checkbox" checked>
+                    <label>Assignment Submited</label>
+                    <input type="text"><button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
                 </li>
             </ul>
         </div>
-        <script src="To_Do.js"></script>
+
     </body>
 
 </html>
