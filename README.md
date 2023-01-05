@@ -1,3 +1,3 @@
 # ADD-TO-DO
-===> Lets chechk it Out 📌📌✅✅👌🏻
+===> Lets check it Out 📌📌✅✅👌🏻
 https://shaikhmd007.github.io/ADD-TO-DO/
